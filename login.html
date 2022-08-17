@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        :root{
+            --red:#cc0c21;
+            --red-ts:#cc0c219f;
+            --red-init:#cc0c2155;
+        }
+
+        body{
+            margin: 0;
+        }
+        nav {
+            align-self: flex-start;
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            height: 50vh;
+            align-items: center;
+        }
+        form {
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 10vh;
+        }
+        label {
+            justify-self: left;
+            align-self: flex-start;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--red);
+        }
+        input {
+            width: 90%;
+            height: 2vh;
+            padding: 1vw;
+            margin: 2vh 0;
+            border: solid 2px var(--red);
+            border-radius: 5px;
+            box-shadow: 2px 2px 1px #000;
+        }
+        input:focus {
+            background-color: var(--red-init);
+            
+        }
+        button[type=submit] {
+            align-self: flex-end;
+            margin: 2vw;
+            background-color: var(--red);
+            border: 0;
+            width: 10vw;
+            height: 8vh;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 4px 4px 1px #000;
+        }
+        button[type=submit]:active{
+            box-shadow: 0 0;
+            background-color: var(--red-init);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="img/principal_nobg.png" width="150px" alt="LOGO"></a>
+    </nav>
+<main>   
+    <form>
+        
+        <label for="lgnUser">Usuário</label>
+        <input type="text" id="lgnUser">
+        <label for="lgnPsw">Senha</label>
+        <input type="password" id="lgnPsw">
+
+        <button type="submit">Entrar</button>
+    </form>
+</main> 
+</body>
+</html>

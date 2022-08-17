@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        :root{
+            --red:#cc0c21;
+            --red-ts:#cc0c219f;
+            --red-init:#cc0c2155;
+        }
+
+        nav {
+            align-self: flex-start;
+            display: flex;
+            justify-content: center;
+            width: 95vw;
+        }
+        #buttons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 95vw;
+            height: 30vh;
+        }
+        #buttons a {
+            background-color: var(--red);
+            width: 250px;
+            height: 10vh;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16pt;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #buttons a:hover {
+            background-color: var(--red-ts);
+        }
+        #buttons a:active{
+            background-color: var(--red-init);
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <img src="img/principal_nobg.png" width="150px" alt="LOGO">
+</nav>
+<main>
+    <div id="buttons">
+        <a id="btnLogin" href="login.html">Login</a>
+        <a id="btnRegister" href="">Cadastrar</a>
+    </div>
+</main>
+</body>
+</html>
